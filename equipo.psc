@@ -1,4 +1,8 @@
-Algoritmo sin_titulo
+Proceso equipo
+	definir ejercicio como entero;
+	escribir "seleccione ejercicio a resolver";
+	escribir "ejercicio 1";
+	Algoritmo sin_titulo
 	Escribir "Por favor ingrese numero a imprimir"
 	leer n
 	
@@ -16,20 +20,13 @@ Algoritmo sin_titulo
 	
 FinAlgoritmo
 
-
-
-
-Proceso equipo
-	definir ejercicio como entero;
-	escribir "seleccione ejercicio a resolver";
-	escribir "ejercicio 1";
 	escribir "ejercicio 2";
 	escribir "ejercicio 3";
 	leer ejercicio;
 	Segun ejercicio Hacer;
 		1:
 			escribir "ejecutar ejercicio 1";
-		2:
+		2
 			escribir "ejecutar ejercicio 2";
 	//espacio de saimon
 	
