@@ -10,6 +10,8 @@ Proceso equipo
 			escribir "ejecutar ejercicio 1";
 		2:
 			escribir "ejecutar ejercicio 2";
+	//espacio de saimon
+	
 		3:
 			escribir "ejecutar ejercicio 3";
 		De Otro Modo:
