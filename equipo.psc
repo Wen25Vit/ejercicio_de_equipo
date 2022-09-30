@@ -1,31 +1,54 @@
-Proceso equipo
-	definir ejercicio como entero;
-	escribir "seleccione ejercicio a resolver";
-	escribir "ejercicio 1";
-	escribir "ejercicio 2";
-	escribir "ejercicio 3";
-	leer ejercicio;
-	Segun ejercicio Hacer;
-		1:
-			escribir "ejecutar ejercicio 1";
-	Escribir "Por favor ingrese numero a imprimir"
-	leer n
-	a<-0
-	b<-1
-	Mientras  a <= n Hacer
-		Escribir a
-		c<-a+b
-		a<-b
-		b<-c
-	FinMientras
-FinAlgoritmo
-		2
-			escribir "ejecutar ejercicio 2";
-	//espacio de saimon
-	
-		3:
-			escribir "ejecutar ejercicio 3";
-		De Otro Modo:
-			escribir "sino se seleccioma una opccion correcta";
-	Fin Segun
+	Proceso equipo
+	decision <- 0
+	Escribir 'Bienvenido'
+	Escribir 'por favor elija una opcion'
+	Escribir 'ejercicio 1'
+	Escribir 'ejercicio 2'
+	Escribir 'ejercicio 3'
+	Leer decision
+	Si decision==1 Entonces
+		// espacio de francisco 
+		Escribir 'usted ha seleccionado fabonacci '
+		Escribir 'Por favor ingrese numero a imprimir'
+		Leer N
+		a <- 0
+		b <- 1
+		Mientras a<=N Hacer
+			Escribir a
+			c <- a+b
+			a <- b
+			b <- c
+		FinMientras
+	SiNo
+		Si decision==2 Entonces
+			// Espacio de Simón 
+			Escribir 'usted a escogido la opcion triangulo'
+			Definir a,b,c,N Como Entero
+			Escribir 'pon un numero por favor.'
+			Leer N
+			Para a<-N Hasta 1 Con Paso -1 Hacer
+				Para b<-1 Hasta a Hacer
+					Escribir ' ' Sin Saltar
+				FinPara
+				Para c<-a Hasta N Hacer
+					Escribir '* ' Sin Saltar
+				FinPara
+				Escribir ''
+			FinPara
+		SiNo
+			Si decision=3 Entonces
+				// Espacio de vitte 
+				Escribir 'usted a escogido la opción multiplicacion '
+				Definir S,N Como Entero
+				Escribir 'asigne N1 numero '
+				Leer S
+				Escribir 'asigne N2 numero '
+				Leer N
+				r <- S*N
+				Escribir 'el resultado es:',r
+			SiNo
+				Escribir 'no ha seleccionado una opcion valida'
+			FinSi
+		FinSi
+	FinSi
 FinProceso
