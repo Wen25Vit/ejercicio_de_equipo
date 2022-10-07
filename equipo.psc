@@ -46,18 +46,30 @@
 				FinPara
 			3:
 				// espacio de Vitte 
-				escribir "usted a escogido la opción multiplicacion "
-				
-				definir S,N Como entero;
-				escribir "asigne N1 numero "
-				leer S
-				escribir "asigne N2 numero "
-				leer N
-				R = S*N
-				escribir "el resultado es:" r;
-				
+				Definir operación, N1, N2, resultado Como Real
+				Escribir "asigne un numero";
+				Leer N1
+				Escribir " asigne un numero";
+				Leer N2
+				Escribir " ";
+				Escribir " 1 = multiplicacion";
+				Escribir " 2 = resta";
+				Escribir " 3 = suma";
+				Escribir " 4 división";
+				Escribir "salir con otro número";
+				Escribir " ";
+				Leer operación
+				Según operación Hacer
+			1: resultado <- N1 * N2
+				Escribir "la multiplicacion de " N1," * " N2, " = " resultado
+			2: resultado <- N1 - N2
+				Escribir " la resta de " N1, " - " N2, " = ", resultado
+			3: resultado <- N1 + N2
+				Escribir " la suma de " N1, " + " N2, " = " resultado
+			4: resultado <- N1 / N2 
+				Escribir " la división de " N1, " / " N2, " = " resultado
+				De Otro Modo:
+				Escribir " error de opccion "					
 		FinSegun
-		
-		
-		
+	      finsegun
 FinAlgoritmo
